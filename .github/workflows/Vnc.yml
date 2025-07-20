@@ -41,12 +41,12 @@ jobs:
       run: |
         nohup ssh -o StrictHostKeyChecking=no -R 80:localhost:6080 serveo.net &
         sleep 10
-        echo "ðŸš€ Tunnel should be up! Check logs below for the public URL."
+        echo "🚀 Tunnel should be up! Check logs below for the public URL."
         ps aux | grep ssh
 
     - name: Show connection info
       run: |
         echo "-------------------------------------------"
-        echo "ðŸ”‘ VNC password: 123456"
-        echo "ðŸŒ Open the public URL from the previous step in your browser"
+        echo "🔑 VNC password: 123456"
+        echo "🌐 Open the public URL from the previous step in your browser"
         echo "-------------------------------------------"
